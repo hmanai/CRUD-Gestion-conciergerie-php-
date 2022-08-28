@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(white, #84d4b5);
+    height: 100vh;
+   
+}
+
+h1{
+    margin-top: 50px;
+    opacity: 0.8;
+    color: #2bc48a;
+    letter-spacing: 0.3em;
+}
+h2{
+    margin-top: 50px;
+    opacity: 0.8;
+    color: #2bc48a;
+    letter-spacing: 0.3em;
+    transform: translateY(-170px);
+    font-size: 2em;
+}
+
+.modif{
+
+    opacity: 0.5;
+    color: #104330;
+}
+.Btn_add {
+    width: fit-content;
+    margin-bottom:20px;
+    background-color: #2bc48a;
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+}
+.Btn_add img {
+    margin-right: 5px;
+    height: 20px;
+}
+/*tableau*/
+table {
+    border-collapse:collapse;
+    color: #404040;
+}
+th {
+    font-size: 16px;
+    border-bottom: 3px solid #ffcb61;
+    padding: 5px 20px;
+    font-weight: 500;
+}
+td {
+    font-weight: 400;
+    padding: 5px 30px;
+    font-size: 14px;
+    text-align: center;
+
+}
+img {
+    height: 25px;
+   
+}
+tr:nth-child(2n){
+    background-color: #f6f8f8;
+}
+tr:nth-child(2n) td {
+    border-bottom: 1px solid #e0e0e0;
+    border-top:  1px solid #e0e0e0;
+}
+/*Form CSS*/
+.form {
+    background-color: #f6f8f8;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form form {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+.back_btn {
+    color: #2bc48a;
+    text-decoration: 0;
+    display: flex;
+    align-items: center;
+}
+.back_btn img {
+    height: 16px;
+    margin-right:5px ;
+}
+h2 {
+    margin: 10px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.erreur_message {
+    color: red;
+    font-size: 12px;
+}
+label {
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+input{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+}
+input:focus{
+    border: 1px solid #ffcb61;
+}
+input[type="submit"]{
+    margin-top: 25px;
+    background-color: #2bc48a;
+    border: 1px solid #2bc48a;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+#gestion{
+min-height: 80%;
+width: 100%;
+display: flex;
+justify-content: center;
+
+
+}
+
+.container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.logout{
+
+    height: 40px;
+    width: 60%;
+    width: fit-content;
+    margin-bottom: 20px;
+    background-color: #2bc48a;
+    padding: 5px 20px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    text-align: 0;
+    border-radius: 6px;
+    text-decoration: 0;
+}
+
+.logout:hover{
+
+    background-color: #fcfffe !important;
+    color: #000e09 !important;
+}
+
+#gestion .logout a{
+
+    text-decoration: none !important;
+    color: #104330 ;
+    
+
+}
+
+ .admin{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-right: thick double #2bc48a;
+    padding-right: 30px;
+}
+
+.photo{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo img{
+
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+
+}
+
+.photo p{
+
+    font-size: 22px;
+    color: #104330;
+    font-weight: 700;
+    text-align: center;
+}
+
+.operation{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operation a {
+
+    margin-bottom: 50px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none !important;
+    color: #3a8568;
+}
+
+.operation a:hover{
+
+    text-decoration:underline !important;
+    color:#2bc48a;
+}
