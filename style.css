@@ -17,6 +17,14 @@ body {
    
 }
 
+.title{
+
+    margin-top: 50px;
+    opacity: 0.8;
+    color: #2bc48a;
+    letter-spacing: 0.3em;
+    transform: translateY(-50px);
+}
 h1{
     margin-top: 50px;
     opacity: 0.8;
@@ -37,6 +45,16 @@ h2{
     opacity: 0.5;
     color: #104330;
 }
+
+.bouttons{
+    display: flex;
+
+}
+
+.fa-solid {
+
+    padding-right: 10px;
+}
 .Btn_add {
     width: fit-content;
     margin-bottom:20px;
@@ -48,6 +66,7 @@ h2{
     text-align: 0;
     border-radius: 6px;
     text-decoration: 0;
+    margin-right: 10px;
 }
 .Btn_add img {
     margin-right: 5px;
@@ -83,6 +102,28 @@ tr:nth-child(2n) td {
     border-top:  1px solid #e0e0e0;
 }
 /*Form CSS*/
+.formrecherch{
+    
+    background-color: #f6f8f8;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.formrecherch form{
+
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+}
+
 .form {
     background-color: #f6f8f8;
     padding: 25px;
@@ -97,6 +138,15 @@ tr:nth-child(2n) td {
     display: flex;
     width: 350px;
     flex-direction: column;
+}
+
+#id-select{
+    padding: 5px;
+    border: 1px solid #999;
+    outline: 0;
+    margin-top: 2px;
+    height: 35px;
+    
 }
 .back_btn {
     color: #2bc48a;
@@ -148,6 +198,16 @@ justify-content: center;
 }
 
 .container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 10px;
+
+}
+
+.containerresult{
     height: 80%;
     width: 80%;
     display: flex;

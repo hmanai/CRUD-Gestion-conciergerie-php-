@@ -2,6 +2,14 @@
 <?php
                 //connexion à la base de donnée
                 include_once "connexion.php";
+                $user = $_GET['user'];
+               
+                $req =  "SELECT * FROM intervention WHERE NOM_UTILISATEUR =:user";
+                $rep = $db->prepare($req);
+                $rep->execute([':user' => $user]);
+                $res = $rep->fetch(PDO::FETCH_OBJ);     
+         
+  
 ?>
 
 
@@ -20,15 +28,15 @@
         <a href="afficher.php" class="back_btn"><img src="images/back.png"> Retour</a>
         <h2>Ajouter une Intervention</h2>
         <p class="erreur_message">
-
-
         </p>
         <form action="" method="POST">
+            <?php
+            ?>
 
             <label>ID du concièrge</label>
-            <input type="number" name="id_concierge">
+            <input type="number" name="id_concierge" value="<?= $res->ID_CONCIERGE;?>" disabled >
             <label>Nom du concièrge</label>
-            <input type="text" name="nom_utilisateur">
+            <input type="text" name="nom_utilisateur" value="<?= $res->NOM_UTILISATEUR; ?>"disabled >
             <label>Date de l'intervention</label>
             <input type="date" name="date_interv">
             <label>Type de l'intervention</label>
@@ -49,8 +57,8 @@
 
                 //requête d'ajout
                 
-                $id_concierge=$_POST['id_concierge']; 
-                $nom_utilisateur=$_POST['nom_utilisateur'];
+                $id_concierge=$res->ID_CONCIERGE; 
+                $nom_utilisateur=$res->NOM_UTILISATEUR;
                 $date_interv=$_POST['date_interv'];
                 $type_interv=$_POST['type_interv'];
                 $etage=$_POST['etage'];
