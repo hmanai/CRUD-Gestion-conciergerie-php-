@@ -191,7 +191,7 @@ session_start();
  
                 $criteres='';
                     if( !empty($_POST['ID_CONCIERGE']) )
-                    $criteres.=" AND NOM_UTILISATEUR LIKE '{$_POST['NOM_UTILISATEUR']}'";
+                    $criteres.=" AND ID_CONCIERGE LIKE '{$_POST['ID_CONCIERGE']}'";
                     if( !empty($_POST['NOM_UTILISATEUR']) )
                     $criteres.=" AND NOM_UTILISATEUR LIKE '{$_POST['NOM_UTILISATEUR']}'";
                     if( !empty($_POST['DATE_INTERV']) )
