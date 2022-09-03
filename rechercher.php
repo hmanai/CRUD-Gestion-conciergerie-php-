@@ -96,7 +96,7 @@ session_start();
                             <?php } ?>
             </select>
             <label>Date de l'intervention</label>
-            <input type="date" name="DATE_INTERV" value='' />
+            <input class="date" type="date" name="DATE_INTERV" value='' />
             <label>Type de l'intervention</label>
             <select id="id-select" name="TYPE_INTERV">
                 <option value="">Choisissez Une Tache</option>
@@ -148,7 +148,7 @@ session_start();
                                         $etage=$_POST['ETAGE_INTERV'];
                                         $immeuble = $_POST['ID_IMMEUBLE'];
                             ?>
-            </select>            <input type="submit" value="Chercher" name="button" />
+            </select>            <input class="search" type="submit" value="Chercher" name="button" />
 
 
         </form>
@@ -170,14 +170,11 @@ session_start();
                     <th>Type de l'intervention</th> 
                     <th>étage</th>
                     <th>Immeuble</th>
-
                 </tr>
                 <?php 
                 //inclure la page de connexion
                 include_once "connexion.php";
-
                 if ( isset($_POST['button'])){
-
                  // disparaitre le formulaire de recherche
                     echo '<style type="text/css">
                     .formrecherch{
@@ -230,8 +227,7 @@ session_start();
             }
                     }
                 
-                    
-
+                
                     ?>
             </table>
         </div>

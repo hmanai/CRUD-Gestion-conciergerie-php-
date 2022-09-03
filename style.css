@@ -326,6 +326,11 @@ h1{
 
 }
 
+.bouttons{
+
+    justify-content: center;
+    align-items: center;
+}
 table{
 
    font-size: 3px;
@@ -347,6 +352,10 @@ table{
 
 }
 
+.containerresult{
+
+width: 100% !important;}
+
 tbody{
 
     font-size: 3px;
@@ -362,6 +371,52 @@ td{
     font-size: 12px;
 
 }
+
+@media only screen and (max-width: 375px) {
+
+    .formrecherch form{
+
+        width: 100%;
+    }
+
+
+    #id-select{
+
+        width: 80%;
+        margin-left: 15px;
+        font-size: 12px;
+
+
+
+    }
+
+    .date{
+
+        width: 80%;
+        margin-left: 15px;
+        font-size: 12px;
+
+
+    }
+
+    .formrecherch{
+
+        width: 100%;
+        padding: 0;
+        font-size: 12px;
+    }
+
+    label, select{
+
+        padding-left: 15px;
+    }
+
+    .search{
+        width: 80%;
+        margin-left: 15px;
+
+    }
+
 }
-   
+}
 
