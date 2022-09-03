@@ -401,6 +401,7 @@ td{
 
         width: 90%;
         padding: 0;
+        margin: 12px;
         font-size: 12px;
     }
 
@@ -413,6 +414,12 @@ td{
         width: 80%;
         margin-left: 15px;
 
+    }
+
+
+
+    th {
+        font-size: 12px;
     }
 
 }
