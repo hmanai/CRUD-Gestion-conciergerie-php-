@@ -350,6 +350,19 @@ table{
 
 }
 
+.formrecherch{
+
+    min-width: fit-content;
+    padding: 0;
+    margin: 12px;
+    font-size: 12px;
+}
+
+.search{
+
+    margin-bottom: 7px;
+
+}
 .containerresult{
 
 width: 100% !important;}
@@ -413,6 +426,7 @@ td{
     .search{
         width: 80%;
         margin-left: 15px;
+        margin-bottom: 7px;
 
     }
 
