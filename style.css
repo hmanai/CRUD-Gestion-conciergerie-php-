@@ -315,6 +315,11 @@ justify-content: center;
     flex-direction: column;
 }
 
+.logout{
+
+    margin-right: 0;
+}
+
 .admin{
 
     width: 100%;
