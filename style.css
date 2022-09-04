@@ -321,6 +321,8 @@ justify-content: center;
     border-right: 0;
     border-bottom: thick double #2bc48a;
     margin-bottom: 30px;
+    padding-right: 0;
+
 }
 
 h1{
