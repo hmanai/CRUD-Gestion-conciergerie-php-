@@ -33,29 +33,30 @@
               header("location: afficher.php");
             }
     ?>
+            <h2>Modifier l'intervention : </h2>
+
 
     <div class="form">
         <a href="afficher.php" class="back_btn"><img src="images/back.png"> Retour</a>
-        <h2>Modifier l'intervention : </h2>
         <p class="erreur_message">
  
         </p>
         <form action="" method="POST">
       
-            <label>ID du concierge</label>
-            <input type="number" name="ID_CONCIERGE" value='<?= $res->ID_CONCIERGE; ?>'  >
+            <label class="lab">ID du concierge</label>
+            <input class="inp" type="number" name="ID_CONCIERGE" value='<?= $res->ID_CONCIERGE; ?>'  >
             
-            <label>Nom du concierge</label>
-            <input type="text" name="NOM_UTILISATEUR" value='<?= $res->NOM_UTILISATEUR; ?>'  >
-            <label>Date de l'intervention</label>
-            <input type="date" name="DATE_INTERV" value='<?= $res->DATE_INTERV; ?>'<?php ?>" />
-            <label>Type de l'intervention</label>
-            <input type="text" name="TYPE_INTERV" value="<?= $res->TYPE_INTERV; ?>" />
-            <label>Etage de l'intervention</label>
-            <input type="number" name="ETAGE_INTERV" value="<?= $res->ETAGE_INTERV; ?>"/>
-            <label>Immeuble</label>
-            <input type="number" name="ID_IMMEUBLE" value="<?= $res->ID_IMMEUBLE; ?>" />
-            <input type="submit" value="Modifier" name="button" />
+            <label class="lab">Nom du concierge</label>
+            <input class="inp" type="text" name="NOM_UTILISATEUR" value='<?= $res->NOM_UTILISATEUR; ?>'  >
+            <label class="lab">Date de l'intervention</label>
+            <input class="inp" type="date" name="DATE_INTERV" value='<?= $res->DATE_INTERV; ?>'<?php ?>" />
+            <label class="lab">Type de l'intervention</label>
+            <input class="inp" type="text" name="TYPE_INTERV" value="<?= $res->TYPE_INTERV; ?>" />
+            <label class="lab">Etage de l'intervention</label>
+            <input class="inp" type="number" name="ETAGE_INTERV" value="<?= $res->ETAGE_INTERV; ?>"/>
+            <label class="lab">Immeuble</label>
+            <input class="inp" type="number" name="ID_IMMEUBLE" value="<?= $res->ID_IMMEUBLE; ?>" />
+            <input class="inp" type="submit" value="Modifier" name="button" />
 
 
         </form>

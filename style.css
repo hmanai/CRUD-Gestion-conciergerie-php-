@@ -36,7 +36,6 @@ h2{
     opacity: 0.8;
     color: #2bc48a;
     letter-spacing: 0.3em;
-    transform: translateY(-170px);
     font-size: 2em;
 }
 
@@ -305,6 +304,11 @@ justify-content: center;
     color:#2bc48a;
 }
 @media only screen and (max-width: 870px) {
+
+    .form{
+
+        width: 90%;
+    }
     
 #gestion{
 
@@ -324,6 +328,15 @@ h1{
     font-size: 1em;
     width: 100%;
 
+}
+h2{
+    margin-top: 50px;
+    opacity: 0.8;
+    color: #2bc48a;
+    letter-spacing: 0.3em;
+    transform: translateY(0);
+    font-size: 1em;
+    text-align: center;
 }
 
 .bouttons{
@@ -411,6 +424,22 @@ td{
 
     }
 
+    .form{
+
+        width: 90%;
+    }
+.inp{
+
+    width: 95%;
+    font-size: 1em;
+}
+
+.lab{
+
+    width: 95%;
+    font-size: 1em;
+
+}
     .formrecherch{
 
         width: 90%;
